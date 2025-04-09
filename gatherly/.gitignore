@@ -401,4 +401,4 @@ FodyWeavers.xsd
 .containers/
 .idea/
 
-*.sln.DotSettings
+*.DotSettings
