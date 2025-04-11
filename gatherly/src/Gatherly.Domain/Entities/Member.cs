@@ -1,12 +1,13 @@
 ﻿using Gatherly.Domain.Premitives;
+using Gatherly.Domain.ValueObjects;
 
 namespace Gatherly.Domain.Entities;
 
-public class Member : Entity
+public sealed class Member : Entity
 {
     public Member(
         Guid id,
-        string firstName,
+        FirstName firstName,
         string lastName,
         string email)
         : base(id)
@@ -16,7 +17,7 @@ public class Member : Entity
         Email = email;
     }
     
-    public string FirstName { get; set; }
+    public FirstName FirstName { get; set; }
 
     public string LastName { get; set; }
 
